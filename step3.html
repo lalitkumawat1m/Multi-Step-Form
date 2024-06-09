@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <title>Multi-step Form | Lalit Kumawat</title>
+  </head>
+  <body>
+    <section class="section">
+      <header class="header">
+        <div class="nav-item-num mobile-item step1">1</div>
+        <div class="nav-item-num mobile-item step2">2</div>
+        <div class="nav-item-num mobile-item step3">3</div>
+        <div class="nav-item-num mobile-item step4">4</div>
+        <nav class="nav">
+          <div class="nav-item">
+            <div class="nav-item-num">1</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 1</div>
+              <div class="nav-item-text-div2">your info</div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <div class="nav-item-num">2</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 2</div>
+              <div class="nav-item-text-div2">select plan</div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <div class="nav-item-num">3</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 3</div>
+              <div class="nav-item-text-div2">add-ons</div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <div class="nav-item-num">4</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 4</div>
+              <div class="nav-item-text-div2">summary</div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="section-wrapper">
+        <h1 class="section-heading">Pick add-ons</h1>
+
+        <p class="section-para">Add-ons help enhance your gaming experience.</p>
+
+        <div class="add-ons-wrapper add-ons-monthly">
+          <div class="add-ons">
+            <input type="checkbox" id="os" class="checkbox" />
+            <label for="os" class="add-ons-plan"
+              >Online service
+              <span class="add-ons-desc"
+                >Access to multiplayer games</span
+              ></label
+            >
+            <div class="add-ons-price">+$1/mo</div>
+          </div>
+
+          <div class="add-ons">
+            <input type="checkbox" id="ls" class="checkbox" />
+            <label for="ls" class="add-ons-plan"
+              >Larger storage
+              <span class="add-ons-desc">Extra 1TB of cloud save</span></label
+            >
+            <div class="add-ons-price">+$2/mo</div>
+          </div>
+
+          <div class="add-ons">
+            <input type="checkbox" id="cp" class="checkbox" />
+            <label for="cp" class="add-ons-plan"
+              >Customizable profit
+              <span class="add-ons-desc"
+                >Custom theme on your profile</span
+              ></label
+            >
+            <div class="add-ons-price">+$2/mo</div>
+          </div>
+        </div>
+
+        <div class="add-ons-wrapper add-ons-yearly" style="display: none">
+          <div class="add-ons">
+            <input type="checkbox" id="ons" class="checkbox" />
+            <label for="ons" class="add-ons-plan"
+              >Online service
+              <span class="add-ons-desc"
+                >Access to multiplayer games</span
+              ></label
+            >
+            <div class="add-ons-price">+$10/yr</div>
+          </div>
+
+          <div class="add-ons">
+            <input type="checkbox" id="las" class="checkbox" />
+            <label for="las" class="add-ons-plan"
+              >Larger storage
+              <span class="add-ons-desc">Extra 1TB of cloud save</span></label
+            >
+            <div class="add-ons-price">+$20/yr</div>
+          </div>
+
+          <div class="add-ons">
+            <input type="checkbox" id="cup" class="checkbox" />
+            <label for="cup" class="add-ons-plan"
+              >Customizable profit
+              <span class="add-ons-desc"
+                >Custom theme on your profile</span
+              ></label
+            >
+            <div class="add-ons-price">+$20/yr</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slidder">
+        <div class="back">go back</div>
+        <div class="next">next step</div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

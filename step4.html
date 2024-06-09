@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <title>Multi-step form | Lalit Kumawat</title>
+  </head>
+  <body>
+    <section class="section">
+      <header class="header">
+        <div class="nav-item-num mobile-item step1">1</div>
+        <div class="nav-item-num mobile-item step2">2</div>
+        <div class="nav-item-num mobile-item step3">3</div>
+        <div class="nav-item-num mobile-item step4">4</div>
+        <nav class="nav">
+          <div class="nav-item">
+            <div class="nav-item-num">1</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 1</div>
+              <div class="nav-item-text-div2">your info</div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <div class="nav-item-num">2</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 2</div>
+              <div class="nav-item-text-div2">select plan</div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <div class="nav-item-num">3</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 3</div>
+              <div class="nav-item-text-div2">add-ons</div>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <div class="nav-item-num">4</div>
+            <div class="nav-item-text">
+              <div class="nav-item-text-div1">step 4</div>
+              <div class="nav-item-text-div2">summary</div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="section-wrapper">
+        <h1 class="section-heading">Finishing up</h1>
+
+        <p class="section-para">
+          Double-check everything looks OK before confirming.
+        </p>
+        <div class="summary-wrapper">
+          <div class="finishing first">
+            <div class="fin-plan">
+              Arcade(Monthly) <span class="change fin-plan2">change</span>
+            </div>
+            <div class="fin-price fin-adds-price">$9/mo</div>
+          </div>
+
+          <div class="finishing">
+            <div class="fin-plan fin-adds-plan">
+              online service <span class="fin-plan2 adds">larger storage</span>
+            </div>
+            <div class="fin-price">
+              $1/mo <span class="fin-price2 adds2">$2/mo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-wrapper" style="display: none">
+          <div class="finishing first">
+            <div class="fin-plan">
+              Arcade(Yearly) <span class="change fin-plan2">change</span>
+            </div>
+            <div class="fin-price fin-adds-price">$90/yr</div>
+          </div>
+
+          <div class="finishing">
+            <div class="fin-plan fin-adds-plan">
+              online service <span class="fin-plan2 adds">larger storage</span>
+            </div>
+            <div class="fin-price">
+              $10/yr <span class="fin-price2 adds2">$20/yr</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="total-per">
+            Total(<span id="billing-period">per month</span>)
+          </div>
+          <div class="total-price" id="total-price">+$12/mo</div>
+        </div>
+
+        <div class="total" style="display: none">
+          <div class="total-per">Total(per years)</div>
+          <div class="total-price">+$120/yr</div>
+        </div>
+      </div>
+
+      <div class="slidder">
+        <div class="back">go back</div>
+        <div class="next" style="background-color: var(--Purplishblue)">
+          confirm
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
